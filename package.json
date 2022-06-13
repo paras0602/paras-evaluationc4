@@ -1,14 +1,18 @@
 {
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "nodemon index.js"
-  },
+"dev": "react-scripts start",
+"start": "serve -s build",
+"build": "react-scripts build",
+"test": "react-scripts test --env=jsdom",
+"eject": "react-scripts eject",
+"heroku-postbuild": "npm run build"
+},
   "dependencies": {
     "express": "^4.18.1",
     "heroku": "^7.60.2",
     "mongoose": "^6.3.6",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.16",
+    "serve": "^13.0.2"
   },
   "name": "myapp",
   "description": "a really cool app",
