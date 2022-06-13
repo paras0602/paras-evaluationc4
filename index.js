@@ -15,5 +15,5 @@ app.get("/", (req, res) => {
 app.listen(PORT, async () => {
     await connection;
     console.log("Successfully Connected to db");
-    console.log(`Server started at ${PORT}`);
+    console.log(`Server started at port`);
 });
