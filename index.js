@@ -6,12 +6,12 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-const PORT = process.env.PORT || 8080;
+
 app.use("/news", nRouter);
 app.get("/", (req, res) => {
     res.send("not working");
 });
-
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, async () => {
     await connection;
     console.log("Successfully Connected to db");

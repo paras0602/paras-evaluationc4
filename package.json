@@ -9,5 +9,11 @@
     "heroku": "^7.60.2",
     "mongoose": "^6.3.6",
     "nodemon": "^2.0.16"
+  },
+  "name": "myapp",
+  "description": "a really cool app",
+  "version": "1.0.0",
+  "engines": {
+    "node": "6.11.1"
   }
 }
