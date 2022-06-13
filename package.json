@@ -1,4 +1,11 @@
 {
+  "name":"evaluationc4",
+  "main": "index.js",
+  "version": "1.0.0",
+  "description": "masai evaluation",
+  "engines": {
+    "node": "16.13.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
