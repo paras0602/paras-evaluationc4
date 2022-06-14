@@ -7,10 +7,10 @@
     "node": "16.13.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "nodemon index.js"
-  },
+  "start": "node index.js",
+  "build": "ng build",
+  "heroku-postbuild": "ng build --prod"
+},
   "dependencies": {
     "express": "^4.18.1",
     "heroku": "^7.60.2",
