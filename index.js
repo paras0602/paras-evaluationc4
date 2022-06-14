@@ -1,9 +1,9 @@
 const express = require("express");
 const nRouter = require("./routes/news");
-const connection = require("./backend/database/db");
+
 
 const app = express();
-var port = process.env.PORT || 8080;
+var PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -12,8 +12,7 @@ app.get("/", (req, res) => {
     res.send("not working");
 });
 
-app.listen(port, async () => {
-    await connection;
-    console.log("Successfully Connected to db");
-    console.log(`Server started at port`);
+app.listen(PORT, function (err) {
+    if (err) console.log("Error in server setup")
+    console.log("Server listening on Port", PORT);
 });
